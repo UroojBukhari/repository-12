@@ -1,0 +1,38 @@
+/* Center flag on screen */
+body {
+  margin: 0;
+  height: 100vh;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flag container with 5:8 aspect ratio */
+.sweden-flag {
+  position: relative;
+  width: 320px;
+  height: 200px; /* 5:8 ratio */
+  background-color: #005cbf; /* Swedish blue */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Vertical part of the yellow cross */
+.vertical-bar {
+  position: absolute;
+  background-color: #ffc720; /* Swedish yellow */
+  width: 40px; /* 1/8 of width (320px/8) = 40px */
+  height: 100%;
+  left: 160px;  /* 4/8 = 50% of flag width */
+  top: 0;
+}
+
+/* Horizontal part of the yellow cross */
+.horizontal-bar {
+  position: absolute;
+  background-color: #ffc720;
+  height: 40px; /* 1/5 of height (200px/5) = 40px */
+  width: 100%;
+  top: 80px; /* 2/5 of height = 80px from top */
+  left: 0;
+}
